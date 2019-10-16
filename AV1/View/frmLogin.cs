@@ -25,11 +25,11 @@ namespace View
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Usuario user = new Usuario();
+           Usuario user = new Usuario();
             user.Login = txbUsuario.Text;
             user.Senha = txbSenha.Text;
 
-            if (ValidarUsuario(user))
+            if (user.Login=="Daniel" && user.Senha=="123")
                 {
                 frmPaginaInicial p = new frmPaginaInicial();
                 p.Show();
@@ -39,22 +39,6 @@ namespace View
                 {
                     MessageBox.Show ("Usuario ou Senha inválidos!!!");
                 }
-        }
-
-        private bool ValidarUsuario(Usuario user)
-        {
-            try
-            {
-                if (user.Login == "Daniel" && user.Senha == "admin")
-                {
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERRO: " + ex.Message);
-            }
-            return false;
         }
     }
 }
