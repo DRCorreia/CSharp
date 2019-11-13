@@ -17,5 +17,14 @@ namespace View
             InitializeComponent();
         }
 
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            Advogado a = new Advogado();
+            a.Id_Adv = txbID;
+            AdvogadoController ctrl = new AdvogadoController();
+            ctrl.ExecutarOpBD('o', a);
+            this.Close();
+        }
+
     }
 }
