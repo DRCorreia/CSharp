@@ -21,7 +21,7 @@ namespace View
         private void CarregarMapaAdvogados()
         {
             Dictionary<Int64, Advogado> mapaAdvogados = (Dictionary<Int64, Advogado>)this.Tag;
-            foreach (Pessoa o in mapaAdvogados.Values)
+            foreach (Advogado o in mapaAdvogados.Values)
             {
                 dgvAdvogado.Rows.Add(o.Id, o.Nome, o.Email,o.Telefone);
             }
