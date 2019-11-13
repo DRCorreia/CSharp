@@ -130,7 +130,7 @@ namespace DAO
                     c.Email = data.GetString(2);
                     c.Telefone = data.GetString(3);
 
-                    listaAdvogado.Add(a);
+                    listaCliente.Add(c);
                 }
 
                 data.Close();
