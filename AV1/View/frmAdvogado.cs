@@ -40,7 +40,7 @@ namespace View
             frmAlterarAdvogado f = new frmAlterarAdvogado();
             f.ShowDialog();
         }
-        
+
         private void btnProcurar_Click(object sender, EventArgs e)
         {
             frmProcurarAdvogado f = new frmProcurarAdvogado();
