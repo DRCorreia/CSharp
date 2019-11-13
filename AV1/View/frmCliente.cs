@@ -41,5 +41,11 @@ namespace View
             f.ShowDialog();
         }
 
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            frmProcurarCliente f = new frmProcurarCliente();
+            f.ShowDialog();
+        }
+
     }
 }
