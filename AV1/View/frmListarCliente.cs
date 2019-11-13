@@ -26,5 +26,13 @@ namespace View
         {
 
         }
+        private void CarregarMapaCliente()
+        {
+            Dictionary<Int64, Cliente> mapaClientes = (Dictionary<Int64, Cliente>)this.Tag;
+            foreach (Cliente o in mapaClientes.Values)
+            {
+                dgvCliente.Rows.Add(o.Id, o.Nome, o.Email,o.Telefone);
+            }
+        }
     }
 }
