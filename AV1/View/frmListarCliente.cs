@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,12 +26,14 @@ namespace View
         {
 
         }
-        private void CarregarMapaCliente()
+
+        private void frmListarCliente_Load(object sender, EventArgs e)
         {
-            Dictionary<Int64, Cliente> mapaClientes = (Dictionary<Int64, Cliente>)this.Tag;
+            ClienteController c = new ClienteController();
+            Dictionary<Int64, Cliente> mapaClientes = c.ExecutarOpBD('t');
             foreach (Cliente o in mapaClientes.Values)
             {
-                dgvCliente.Rows.Add(o.Id, o.Nome, o.Email,o.Telefone);
+                dgvAdvogado.Rows.Add(o.Id, o.Nome, o.Email, o.Telefone);
             }
         }
     }
