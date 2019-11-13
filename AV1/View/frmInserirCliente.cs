@@ -22,10 +22,10 @@ namespace View
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             Cliente c = new Cliente();
-            c.Id = txbCpf;
-            c.Nome = txbNome;
-            c.Email = txbEmail;
-            c.Telefone = txbTelefone;
+            c.Id_cli = txbCpf;
+            c.Nome_cli = txbNome;
+            c.Email_cli = txbEmail;
+            c.Telefone_cli = txbTelefone;
 
             ClienteController ctrlCli = ClienteController();
 
