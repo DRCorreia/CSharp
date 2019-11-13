@@ -114,7 +114,7 @@ namespace DAO
 
         public List<Cliente> ListarTodos()
         {
-            List<Cliente> listaAdvogado = new List<Cliente>();
+            List<Cliente> listaCliente = new List<Cliente>();
             try
             {
                 String SQL = "SELECT * FROM advogado;";
