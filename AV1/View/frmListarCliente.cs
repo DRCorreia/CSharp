@@ -29,8 +29,9 @@ namespace View
 
         private void frmListarCliente_Load(object sender, EventArgs e)
         {
+            Cliente cli = new Cliente();
             ClienteController c = new ClienteController();
-            Dictionary<Int64, Cliente> mapaClientes = c.ExecutarOpBD('t');
+            Dictionary<Int64, Cliente> mapaClientes = c.ExecutarOpBD('t',cli);
             foreach (Cliente o in mapaClientes.Values)
             {
                 dgvAdvogado.Rows.Add(o.Id, o.Nome, o.Email, o.Telefone);
