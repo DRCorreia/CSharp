@@ -26,8 +26,8 @@ namespace View
             c.Email = txbEmail;
             c.Telefone = txbTelefone;
 
-            ClienteController c = new ClienteController();
-            c.ExecutarOpBD('a', c);
+            ClienteController ctrl = new ClienteController();
+            ctrl.ExecutarOpBD('a', ctrl);
             this.Close();
         }
     }
