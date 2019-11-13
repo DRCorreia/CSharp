@@ -22,10 +22,10 @@ namespace View
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
            Advogado a = new Advogado();
-            a.Id = txbCpf;
-            a.Nome = txbNome;
-            a.Email = txbEmail;
-            a.Telefone = txbTelefone;
+            a.Id_adv = txbCpf;
+            a.Nome_adv = txbNome;
+            a.Email_adv = txbEmail;
+            a.Telefone_adv = txbTelefone;
 
             AdvogadoController ctrlAdv = AdvogadoController();
 
@@ -35,3 +35,4 @@ namespace View
         }
     }
 }
+
