@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -22,11 +20,13 @@ namespace View
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             Cliente c = new Cliente();
-            c.Id = txbCpf;
+            c.Id_cli = txbCpf;
 
             ClienteController ctrl = new ClienteController();
-            ctrl.ExecutarOpBD('e', ctrl);
+            ctrl.ExecutarOpBD('e', c);
             this.Close();
         }
     }
+}
+
 }
