@@ -22,10 +22,10 @@ namespace DAO
                 {
                     c = new Advogado();
 
-                    c.Id = data.GetInt32(0);
-                    c.Nome = data.GetString(1);
-                    c.Email = data.GetString(2);
-                    c.Telefone = data.GetString(3);
+                    c.Id_cli = data.GetInt32(0);
+                    c.Nome_cli = data.GetString(1);
+                    c.Email_cli = data.GetString(2);
+                    c.Telefone_cli = data.GetString(3);
                 }
 
                 data.Close();
@@ -45,10 +45,10 @@ namespace DAO
             try
             {
                 String SQL = String.Format("INSERT INTO cliente (id,nome, email, telefone) VALUES ('{0}', '{1}', '{2}', '{3}')",
-                    _objeto.Id,
-                    _objeto.Nome,
-                    _objeto.Email,
-                    _objeto.Telefone);
+                    _objeto.Id_cli,
+                    _objeto.Nome_cli,
+                    _objeto.Email_cli,
+                    _objeto.Telefone_cli);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -71,9 +71,9 @@ namespace DAO
             try
             {
                 String SQL = String.Format("UPDATE cliente SET email = '{0}', telefone = '{1}' WHERE id = {2};",
-                    _objeto.Email,
-                    _objeto.Telefone,
-                    _objeto.Id);
+                    _objeto.Email_cli,
+                    _objeto.Telefone_cli,
+                    _objeto.Id_cli);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -125,10 +125,10 @@ namespace DAO
                 {
                    Cliente c = new Cliente();
 
-                    cId = data.GetInt32(0);
-                    c.Nome = data.GetString(1);
-                    c.Email = data.GetString(2);
-                    c.Telefone = data.GetString(3);
+                    c.Id_cli = data.GetInt32(0);
+                    c.Nome_cli = data.GetString(1);
+                    c.Email_cli = data.GetString(2);
+                    c.Telefone_cli = data.GetString(3);
 
                     listaCliente.Add(c);
                 }
