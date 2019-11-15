@@ -21,7 +21,7 @@ namespace View
         {
             Audiencia a = new Audiencia();
             a.Id_audiencia= txbID;
-            a.Data = txbData;
+            a.Data_audiencia = txbData;
             
             CausasController ctrl = new CausasController();
             ctrl.ExecutarOpBD('a', a);
