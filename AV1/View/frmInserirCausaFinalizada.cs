@@ -27,7 +27,7 @@ namespace View
             
                 CausasController ctrl = CausasController();
 
-            ctrlAdv.ExecutarOpBD('i', c);
+            ctrl.ExecutarOpBD('i', c);
 
             this.Close();
         }
