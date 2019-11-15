@@ -21,6 +21,16 @@ namespace View
         {
 
         }
+        
+        private void CarregarMapaAudiencia()
+        {
+            AudienciaController a = new AudienciaController();
+            Dictionary<Int64, Audiencia> mapaAudiencia = a.ExecutarOpBD('t');
+            foreach (Audiencia o in mapaAudiencia.Values)
+            {
+                dgvAudiencia.Rows.Add(o.Id_audiencia, o.Nome_adv, o.Nome_cli ,o.Id_processo,o.Data_audiencia);
+            }
+        }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
