@@ -24,7 +24,7 @@ namespace View
             Cliente c = new Cliente();
             c.Id_Cli = txbID;
             ClienteController ctrl = new ClienteController();
-            ctrl.ExecutarOpBD('o', ctrl);
+            ctrl.ExecutarOpBD('o', c);
             this.Close();
         }
     }
