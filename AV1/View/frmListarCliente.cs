@@ -36,7 +36,7 @@ namespace View
             Dictionary<Int64, Cliente> mapaClientes = c.ExecutarOpBD('t',cli);
             foreach (Cliente o in mapaClientes.Values)
             {
-                dgvCliente.Rows.Add(o.Id, o.Nome, o.Email, o.Telefone);
+                dgvCliente.Rows.Add(o.Id_cli, o.Nome_cli, o.Email_cli, o.Telefone_cli);
             }
         }
     }
