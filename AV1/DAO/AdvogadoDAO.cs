@@ -14,7 +14,7 @@ namespace DAO
             Advogado a = null;
             try
             {
-                String SQL = String.Format("SELECT * FROM advogado WHERE id = {0} ", _id);
+                String SQL = String.Format("SELECT * FROM advogado WHERE id_adv = {0} ", _id);
 
                 SqlCeDataReader data = BD.ExecutarSelect(SQL);
 
@@ -22,10 +22,10 @@ namespace DAO
                 {
                     a = new Advogado();
 
-                    a.Id = data.GetInt32(0);
-                    a.Nome = data.GetString(1);
-                    a.Email = data.GetString(2);
-                    a.Telefone = data.GetString(3);
+                    a.Id_adv = data.GetInt32(0);
+                    a.Nome_adv = data.GetString(1);
+                    a.Email_adv = data.GetString(2);
+                    a.Telefone_adv = data.GetString(3);
                 }
 
                 data.Close();
@@ -44,11 +44,11 @@ namespace DAO
             bool resultado = false;
             try
             {
-                String SQL = String.Format("INSERT INTO advogado (id,nome, email, telefone) VALUES ('{0}', '{1}', '{2}', '{3}')",
-                    _objeto.Id,
-                    _objeto.Nome,
-                    _objeto.Email,
-                    _objeto.Telefone);
+                String SQL = String.Format("INSERT INTO advogado (id_adv,nome_adv, email_adv, telefone_adv) VALUES ('{0}', '{1}', '{2}', '{3}')",
+                    _objeto.Id_adv,
+                    _objeto.Nome_adv,
+                    _objeto.Email_adv,
+                    _objeto.Telefone_adv);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -70,10 +70,10 @@ namespace DAO
             bool resultado = false;
             try
             {
-                String SQL = String.Format("UPDATE advogado SET email = '{0}', telefone = '{1}' WHERE id = {2};",
-                    _objeto.Email,
-                    _objeto.Telefone,
-                    _objeto.Id);
+                String SQL = String.Format("UPDATE advogado SET email_adv = '{0}', telefone_adv = '{1}' WHERE id = {2};",
+                    _objeto.Email_adv,
+                    _objeto.Telefone_adv,
+                    _objeto.Id_adv);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -95,7 +95,7 @@ namespace DAO
             bool resultado = false;
             try
             {
-                String SQL = String.Format("DELETE FROM advogado WHERE id = {0};", _id);
+                String SQL = String.Format("DELETE FROM advogado WHERE id_adv = {0};", _id);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -125,10 +125,10 @@ namespace DAO
                 {
                     Advogado a = new Advogado();
 
-                    a.Id = data.GetInt32(0);
-                    a.Nome = data.GetString(1);
-                    a.Email = data.GetString(2);
-                    a.Telefone = data.GetString(3);
+                    a.Id_adv = data.GetInt32(0);
+                    a.Nome_adv = data.GetString(1);
+                    a.Email_adv = data.GetString(2);
+                    a.Telefone_adv = data.GetString(3);
 
                     listaAdvogado.Add(a);
                 }
