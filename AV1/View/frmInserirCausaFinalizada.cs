@@ -19,6 +19,14 @@ namespace View
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            CausasFinalizadas c = new CausasFinalizadas();
+            c.Id_processo = txbProcesso;
+            c.Veredito = txbVeredito;
+            
+                CausasController ctrl = CausasController();
+
+            ctrlAdv.ExecutarOpBD('i', c);
+
             this.Close();
         }
     }
