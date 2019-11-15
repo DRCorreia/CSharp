@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
+using Controller1;
 
 namespace View
 {
@@ -22,33 +24,17 @@ namespace View
             this.Close();
         }
 
-        private void dgvProcesso_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void frmListarProcesso_Load(object sender, EventArgs e)
         {
-             try
+            Processo p = new Processo();
+            ProcessoController ctrl = new ProcessoController();
+            Dictionary<Int64, Processo> mapaProcessos = ctrl.ExecutarOpBD('t', p);
+            foreach (Processo o in mapaProcessos.Values)
             {
-                Int64 idProcesso = Convert.ToInt64(dgvProcesso.SelectedRows[0].Cells[0].Value);
-
-                Dictionary<Int64, Processo> mapaProcesso = (Dictionary<Int64, Processo>);
-
-                Processo p = mapaProcesso[idProcesso];
-
-                frmInserirProcesso form = new frmInserirProcesso();
-
-                form.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERRO AO SELECIONAR LINHA: " + ex.Message);
+                dgvProcesso.Rows.Add(o.Id_processo, o.Nome_cli, o.Nome_adv,o.Tipo_processo, o.Situacao_processo);
             }
         }
-        private void CarregarMapaProcesso()
-        {
-            Dictionary<Int64, Processo> mapaProcesso = (Dictionary<Int64, Processo>);
-            foreach (Processo o in mapaProcesso.Values)
-            {
-                dgvProcesso.Rows.Add(o.Id, o.NomeCli, o.NomeAdv,o.Tipo,o.Situacao);
-            }
-        }
+
 
      }
 
