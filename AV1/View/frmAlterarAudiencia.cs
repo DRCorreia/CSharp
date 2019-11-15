@@ -19,12 +19,12 @@ namespace View
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            CausasFinalizadas c = new CausasFinalizadas();
-            c.Id_processo = txbID;
-            c.Veredito = txbVeredito;
+            Audiencia a = new Audiencia();
+            a.Id_audiencia= txbID;
+            a.Data = txbData;
             
             CausasController ctrl = new CausasController();
-            ctrl.ExecutarOpBD('a', ctrl);
+            ctrl.ExecutarOpBD('a', a);
             this.Close();
         }
     }
