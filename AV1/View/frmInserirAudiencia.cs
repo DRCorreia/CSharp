@@ -19,6 +19,17 @@ namespace View
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            Audiencia a = new Audiencia();
+            a.Id_audiencia = txbID;
+            a.Nome_adv = txbAdv;
+            a.Nome_cli = txbCli;
+            a.Id_processo = txbProcesso;
+            a.Data_audiencia = txbData;
+
+            AudienciaController ctrl = AudienciaController();
+
+            ctrl.ExecutarOpBD('i', a);
+
             this.Close();
         }
     }
