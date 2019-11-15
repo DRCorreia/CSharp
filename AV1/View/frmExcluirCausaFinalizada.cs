@@ -23,7 +23,7 @@ namespace View
             c.Id_processo = txbID;
 
             CausasController ctrl = new CausasController();
-            ctrl.ExecutarOpBD('e', a);
+            ctrl.ExecutarOpBD('e', ctrl);
             this.Close();
         }
     }
