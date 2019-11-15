@@ -14,7 +14,7 @@ namespace DAO
             Cliente c  = null;
             try
             {
-                String SQL = String.Format("SELECT * FROM cliente WHERE id = {0} ", _id);
+                String SQL = String.Format("SELECT * FROM cliente WHERE id_cli = {0} ", _id);
 
                 SqlCeDataReader data = BD.ExecutarSelect(SQL);
 
@@ -44,7 +44,7 @@ namespace DAO
             bool resultado = false;
             try
             {
-                String SQL = String.Format("INSERT INTO cliente (id,nome, email, telefone) VALUES ('{0}', '{1}', '{2}', '{3}')",
+                String SQL = String.Format("INSERT INTO cliente (id_cli,nome_cli, email_cli, telefone_cli) VALUES ('{0}', '{1}', '{2}', '{3}')",
                     _objeto.Id_cli,
                     _objeto.Nome_cli,
                     _objeto.Email_cli,
@@ -70,7 +70,7 @@ namespace DAO
             bool resultado = false;
             try
             {
-                String SQL = String.Format("UPDATE cliente SET email = '{0}', telefone = '{1}' WHERE id = {2};",
+                String SQL = String.Format("UPDATE cliente SET email_cli = '{0}', telefone_cli = '{1}' WHERE id_cli = {2};",
                     _objeto.Email_cli,
                     _objeto.Telefone_cli,
                     _objeto.Id_cli);
@@ -95,7 +95,7 @@ namespace DAO
             bool resultado = false;
             try
             {
-                String SQL = String.Format("DELETE FROM cliente WHERE id = {0};", _id);
+                String SQL = String.Format("DELETE FROM cliente WHERE id_cli = {0};", _id);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
