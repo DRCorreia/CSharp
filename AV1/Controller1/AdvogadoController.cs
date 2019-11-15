@@ -8,8 +8,6 @@ using DAO;
 
 namespace Controller1
 {
-    class AdvogadoController
-    {
         public class AdvogadoController
         {
             public Object ExecutarOpBD(char _c, Advogado _o)
@@ -39,5 +37,4 @@ namespace Controller1
                 }
             }
         }
-    }
 }
