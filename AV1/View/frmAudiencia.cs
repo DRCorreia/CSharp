@@ -45,6 +45,12 @@ namespace View
             frmAlterarAudiencia a = new frmAlterarAudiencia();
             a.ShowDialog();
         }
+        
+         private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            frmProcurarAudiencia a = new frmProcurarAudiencia();
+            a.ShowDialog();
+        }
 
 
     }
