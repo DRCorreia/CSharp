@@ -25,17 +25,26 @@ namespace View
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-
+            frmListarCausaFinalizada c = new frmListarCausaFinalizada();
+            c.ShowDialog();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
+            frmExcluirCausaFinalizada c = new frmExcluirCausaFinalizada();
+            c.ShowDialog();
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
+            frmAlterarCausaFinalizada c = new frmAlterarCausaFinalizada();
+            c.ShowDialog();
+        }
 
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            frmProcurarCausaFinalizada c = new frmProcurarCausaFinalizada();
+            c.ShowDialog();
         }
     }
 }
