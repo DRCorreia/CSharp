@@ -19,6 +19,11 @@ namespace View
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            CausasFinalizadas c = new CausasFinalizadas();
+            c.Id_processo = txbID;
+
+            CausasController ctrl = new CausasController();
+            ctrl.ExecutarOpBD('e', a);
             this.Close();
         }
     }
