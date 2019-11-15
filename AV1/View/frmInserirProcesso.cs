@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
+using Controller1;
 
 namespace View
 {
@@ -19,6 +21,17 @@ namespace View
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            Processo p = new Processo();
+            p.Id_processo = txbProcesso;
+            p.Nome_cli = txbCliente;
+            p.Nome_adv = txbAdvogado;
+            p.Tipo_processo = txbTipo;
+            p.Situacao_processo = txbSituacao;
+
+            ProcessoController ctrl = ProcessoController();
+
+            ctrl.ExecutarOpBD('i', p);
+
             this.Close();
         }
     }
