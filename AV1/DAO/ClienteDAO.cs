@@ -20,7 +20,7 @@ namespace DAO
 
                 if (data.Read())
                 {
-                    c = new Advogado();
+                    c = new Cliente();
 
                     c.Id_cli = data.GetInt32(0);
                     c.Nome_cli = data.GetString(1);
@@ -117,7 +117,7 @@ namespace DAO
             List<Cliente> listaCliente = new List<Cliente>();
             try
             {
-                String SQL = "SELECT * FROM advogado;";
+                String SQL = "SELECT * FROM cliente;";
 
                 SqlCeDataReader data = BD.ExecutarSelect(SQL);
 
