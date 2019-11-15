@@ -18,13 +18,13 @@ namespace Controller1
                         case 'i':
                             return dao.Inserir(_o);
                         case 'd':
-                            return dao.Deletar(_o.Id);
+                            return dao.Deletar(_o.Id_cli);
                         case 'a':
                             return dao.Atualizar(_o);
                         case 't':
                             return dao.ListarTodos();
                         case 'o':
-                            return dao.BuscarPorID(_o.Id);
+                            return dao.BuscarPorID(_o.Id_cli);
                         default:
                             return null;
                     }
