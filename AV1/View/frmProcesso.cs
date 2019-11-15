@@ -40,5 +40,11 @@ namespace View
             frmAlterarProcesso p = new frmAlterarProcesso();
             p.ShowDialog();
         }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            frmProcurarProcesso p = new frmProcurarProcesso();
+            p.ShowDialog();
+        }
     }
 }
