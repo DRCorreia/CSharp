@@ -42,7 +42,7 @@ namespace DAO
             bool resultado = false;
             try
             {
-                String SQL = String.Format("INSERT INTO causasfinalizadas (id,veredito) VALUES ('{0}', '{1}')",
+                String SQL = String.Format("INSERT INTO causasfinalizadas (id_processo,veredito) VALUES ('{0}', '{1}')",
                     _objeto.Id_processo,
                     _objeto.Veredito);
 
