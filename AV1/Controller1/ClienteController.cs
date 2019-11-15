@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace Controller1
 {
-    class ClienteController
-    {
         public class ClienteController
         {
             public Object ExecutarOpBD(char _c, Cliente _o)
@@ -37,5 +35,4 @@ namespace Controller1
                 }
             }
         }
-    }
 }
