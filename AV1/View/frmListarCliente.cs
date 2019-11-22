@@ -33,8 +33,8 @@ namespace View
         {
             Cliente cli = new Cliente();
             ClienteController c = new ClienteController();
-            Dictionary<Int64, Cliente> mapaClientes = c.ExecutarOpBD('t',cli);
-            foreach (Cliente o in mapaClientes.Values)
+            List<Cliente> listaClientes = c.ExecutarOpBD('t');
+            foreach (Cliente o in listaClientes.Values)
             {
                 dgvCliente.Rows.Add(o.Id_cli, o.Nome_cli, o.Email_cli, o.Telefone_cli);
             }
