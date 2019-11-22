@@ -22,10 +22,10 @@ namespace View
         private void CarregarMapaCausas()
         {
             CausasController c = new CausasController();
-            Dictionary<Int64, CausasFinalizadas> mapaCausas = c.ExecutarOpBD('t');
-            foreach (CausasFinalizadas o in mapaCausas.Values)
+            List<CausasFinalizadas> listaCausas = c.ExecutarOpBD('t');
+            foreach (CausasFinalizadas o in Lista.Values)
             {
-                dgvCausasFinalizadas.Rows.Add(o.Id_processo,o.Veredito);
+                dgvCausasFinalizadas.Rows.Add(o.Processo.Id_processo,o.Veredito);
             }
         }
         
