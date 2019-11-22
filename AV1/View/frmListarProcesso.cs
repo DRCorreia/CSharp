@@ -28,10 +28,10 @@ namespace View
         {
             Processo p = new Processo();
             ProcessoController ctrl = new ProcessoController();
-            Dictionary<Int64, Processo> mapaProcessos = ctrl.ExecutarOpBD('t', p);
-            foreach (Processo o in mapaProcessos.Values)
+            List<Processo> listaProcessos = ctrl.ExecutarOpBD('t', p);
+            foreach (Processo o in listaProcessos.Values)
             {
-                dgvProcesso.Rows.Add(o.Id_processo, o.Nome_cli, o.Nome_adv,o.Tipo_processo, o.Situacao_processo);
+                dgvProcesso.Rows.Add(o.Id_processo, o.Cliente.Nome_cli, o.Advogado.Nome_adv,o.Tipo_processo, o.Situacao_processo);
             }
         }
 
