@@ -30,7 +30,7 @@ namespace View
             List<Audiencia> listaAudiencia = a.ExecutarOpBD('t');
             foreach (Audiencia o in listaAudiencia.Values)
             {
-                dgvAudiencia.Rows.Add(o.Id_audiencia, o.Advogado.Nome_adv, o.Cliente.Nome_cli ,o.Id_processo,o.Data_audiencia);
+                dgvAudiencia.Rows.Add(o.Id_audiencia, o.Advogado.Nome_adv, o.Cliente.Nome_cli ,o.Processo.Id_processo,o.Data_audiencia);
             }
         }
 
