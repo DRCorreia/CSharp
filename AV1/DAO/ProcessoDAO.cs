@@ -25,8 +25,8 @@ namespace DAO
                     Processo p = new Processo();
 
                     p.Id_processo = data.GetInt32(0);
-                    p.Nome_cli = data.GetString(1);
-                    p.Nome_adv = data.GetString(2);
+                    p.Cliente.Nome_cli = data.GetString(1);
+                    p.Advogado.Nome_adv = data.GetString(2);
                     p.Tipo_processo = data.GetInt32(3);
                     p.Situacao_processo = data.GetDate(4);
                 }
@@ -49,8 +49,8 @@ namespace DAO
             {
                 String SQL = String.Format("INSERT INTO processo (id_processo,nome_cli,nome_adv, tipo_processo , situacao_processo) VALUES ('{0}', '{1}', '{2}', '{3}','{4}')",
                     _objeto.Id_processo,
-                    _objeto.Nome_cli,
-                    _objeto.Nome_adv,
+                    _objeto.Cliente.Nome_cli,
+                    _objeto.Advogado.Nome_adv,
                     _objeto.Tipo_processo,
                     _objeto.Situacao_processo);
 
@@ -129,8 +129,8 @@ namespace DAO
                     Processo p = new Processo();
 
                     p.Id_processo = data.GetInt32(0);
-                    p.Nome_cli = data.GetString(1);
-                    p.Nome_adv = data.GetString(2);
+                    p.Cliente.Nome_cli = data.GetString(1);
+                    p.Advogado.Nome_adv = data.GetString(2);
                     p.Tipo_processo = data.GetInt32(3);
                     p.Situacao_processo = data.GetDate(4);
 
