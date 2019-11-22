@@ -23,8 +23,8 @@ namespace View
         private void CarregarMapaAdvogados()
         {
             AdvogadoController a = new AdvogadoController();
-            Dictionary<Int64, Advogado> mapaAdvogados = a.ExecutarOpBD('t');
-            foreach (Advogado o in mapaAdvogados.Values)
+            List<Advogado> listaAdvogados = a.ExecutarOpBD('t');
+            foreach (Advogado o in listaAdvogados.Values)
             {
                 dgvAdvogado.Rows.Add(o.Id, o.Nome, o.Email,o.Telefone);
             }
