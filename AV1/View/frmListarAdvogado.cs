@@ -26,7 +26,7 @@ namespace View
             List<Advogado> listaAdvogados = a.ExecutarOpBD('t');
             foreach (Advogado o in listaAdvogados.Values)
             {
-                dgvAdvogado.Rows.Add(o.Id, o.Nome, o.Email,o.Telefone);
+                dgvAdvogado.Rows.Add(o.Id_adv, o.Nome_adv, o.Email_adv,o.Tel_adv);
             }
         }
 
