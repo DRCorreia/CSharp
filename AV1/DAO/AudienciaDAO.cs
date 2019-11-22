@@ -23,8 +23,8 @@ namespace DAO
                     a = new Audiencia();
 
                     a.Id_audiencia = data.GetInt32(0);
-                    a.Nome_adv = data.GetString(1);
-                    a.Nome_cli = data.GetString(2);
+                    a.Advogado.Nome_adv = data.GetString(1);
+                    a.Cliente.Nome_cli = data.GetString(2);
                     a.Id_processo = data.GetInt32(3);
                     a.Data_audiencia = data.GetDate(4);
                 }
@@ -47,8 +47,8 @@ namespace DAO
             {
                 String SQL = String.Format("INSERT INTO audiencia (id_audiencia,nome_adv,nome_cli, id_processo , data_audiencia) VALUES ('{0}', '{1}', '{2}', '{3}','{4}')",
                     _objeto.Id_audiencia,
-                    _objeto.Nome_adv,
-                    _objeto.Nome_cli,
+                    _objeto.Advogado.Nome_adv,
+                    _objeto.Cliente.Nome_cli,
                     _objeto.Id_processo,
                     _objeto.Data_audiencia);
 
@@ -127,8 +127,8 @@ namespace DAO
                     Audiencia a = new Audiencia();
 
                     a.Id_audiencia = data.GetInt32(0);
-                    a.Nome_adv = data.GetString(1);
-                    a.Nome_cli = data.GetString(2);
+                    a.Advogado.Nome_adv = data.GetString(1);
+                    a.Cliente.Nome_cli = data.GetString(2);
                     a.Id_processo = data.GetInt32(3);
                     a.Data_audiencia = data.GetDate(4);
 
