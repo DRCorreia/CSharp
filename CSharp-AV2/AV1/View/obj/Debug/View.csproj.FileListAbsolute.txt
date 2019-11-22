@@ -1,0 +1,30 @@
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\bin\Debug\View.exe.config
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\bin\Debug\View.exe
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\bin\Debug\View.pdb
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.Login.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.PaginaInicial.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.Properties.Resources.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.exe
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.pdb
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmAdvogado.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmAlterarAdvogado.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmAlterarCliente.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmAudiencia.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmCliente.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmExcluirAdvogado.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmExcluirAudiencia.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmExcluirCliente.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmInserirAdvogado.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmInserirAudiencia.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmListarAdvogado.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmListarAudiencia.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmListarCliente.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmLogin.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmPaginaInicial.resources
+C:\Users\danie\OneDrive\Documents\Visual Studio 2012\Projects\Model\View\obj\Debug\View.frmInserirCliente.resources
+C:\Users\danie\Downloads\CSharp-master\CSharp-master\AV1\View\bin\Debug\View.exe.config
+C:\Users\danie\Downloads\CSharp-master\CSharp-master\AV1\View\obj\Debug\View.exe
+C:\Users\danie\OneDrive\Área de Trabalho\CSharp-master\AV1\View\bin\Debug\View.exe.config
+C:\Users\danie\OneDrive\Área de Trabalho\CSharp-master\AV1\View\obj\Debug\View.exe

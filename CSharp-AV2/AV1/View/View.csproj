@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C5CF1B5-B631-4EDB-82FB-C13257D5ADAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAlterarAdvogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarAdvogado.Designer.cs">
+      <DependentUpon>frmAlterarAdvogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarCausaFinalizada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarCausaFinalizada.Designer.cs">
+      <DependentUpon>frmAlterarCausaFinalizada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarCliente.Designer.cs">
+      <DependentUpon>frmAlterarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAudiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudiencia.Designer.cs">
+      <DependentUpon>frmAudiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExcluirAdvogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExcluirAdvogado.Designer.cs">
+      <DependentUpon>frmExcluirAdvogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdvogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdvogado.Designer.cs">
+      <DependentUpon>frmAdvogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExcluirAudiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExcluirAudiencia.Designer.cs">
+      <DependentUpon>frmExcluirAudiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExcluirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExcluirCliente.Designer.cs">
+      <DependentUpon>frmExcluirCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInserirAdvogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInserirAdvogado.Designer.cs">
+      <DependentUpon>frmInserirAdvogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInserirAudiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInserirAudiencia.Designer.cs">
+      <DependentUpon>frmInserirAudiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarAdvogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarAdvogado.Designer.cs">
+      <DependentUpon>frmListarAdvogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarAudiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarAudiencia.Designer.cs">
+      <DependentUpon>frmListarAudiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarCliente.Designer.cs">
+      <DependentUpon>frmListarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaginaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaginaInicial.Designer.cs">
+      <DependentUpon>frmPaginaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInserirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInserirCliente.Designer.cs">
+      <DependentUpon>frmInserirCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlterarAdvogado.resx">
+      <DependentUpon>frmAlterarAdvogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarCausaFinalizada.resx">
+      <DependentUpon>frmAlterarCausaFinalizada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarCliente.resx">
+      <DependentUpon>frmAlterarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudiencia.resx">
+      <DependentUpon>frmAudiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExcluirAdvogado.resx">
+      <DependentUpon>frmExcluirAdvogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdvogado.resx">
+      <DependentUpon>frmAdvogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExcluirAudiencia.resx">
+      <DependentUpon>frmExcluirAudiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExcluirCliente.resx">
+      <DependentUpon>frmExcluirCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInserirAdvogado.resx">
+      <DependentUpon>frmInserirAdvogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInserirAudiencia.resx">
+      <DependentUpon>frmInserirAudiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarAdvogado.resx">
+      <DependentUpon>frmListarAdvogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarAudiencia.resx">
+      <DependentUpon>frmListarAudiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarCliente.resx">
+      <DependentUpon>frmListarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaginaInicial.resx">
+      <DependentUpon>frmPaginaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInserirCliente.resx">
+      <DependentUpon>frmInserirCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
