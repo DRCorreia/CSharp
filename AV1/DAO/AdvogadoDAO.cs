@@ -26,7 +26,7 @@ namespace DAO
                     a.Id_adv = data.GetInt32(0);
                     a.Nome_adv = data.GetString(1);
                     a.Email_adv = data.GetString(2);
-                    a.Telefone_adv = data.GetString(3);
+                    a.Tel_adv = data.GetString(3);
                 }
 
                 data.Close();
@@ -49,7 +49,7 @@ namespace DAO
                     _objeto.Id_adv,
                     _objeto.Nome_adv,
                     _objeto.Email_adv,
-                    _objeto.Telefone_adv);
+                    _objeto.Tel_adv);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -73,7 +73,7 @@ namespace DAO
             {
                 String SQL = String.Format("UPDATE advogado SET email_adv = '{0}', telefone_adv = '{1}' WHERE id = {2};",
                     _objeto.Email_adv,
-                    _objeto.Telefone_adv,
+                    _objeto.Tel_adv,
                     _objeto.Id_adv);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
@@ -129,7 +129,7 @@ namespace DAO
                     a.Id_adv = data.GetInt32(0);
                     a.Nome_adv = data.GetString(1);
                     a.Email_adv = data.GetString(2);
-                    a.Telefone_adv = data.GetString(3);
+                    a.Tel_adv = data.GetString(3);
 
                     listaAdvogado.Add(a);
                 }
