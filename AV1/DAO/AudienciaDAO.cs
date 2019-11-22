@@ -26,7 +26,7 @@ namespace DAO
                     a.Id_audiencia = data.GetInt32(0);
                     a.Advogado.Nome_adv = data.GetString(1);
                     a.Cliente.Nome_cli = data.GetString(2);
-                    a.Id_processo = data.GetInt32(3);
+                    a.Processo.Id_processo = data.GetInt32(3);
                     a.Data_audiencia = data.GetDate(4);
                 }
 
@@ -50,7 +50,7 @@ namespace DAO
                     _objeto.Id_audiencia,
                     _objeto.Advogado.Nome_adv,
                     _objeto.Cliente.Nome_cli,
-                    _objeto.Id_processo,
+                    _objeto.Processo.Id_processo,
                     _objeto.Data_audiencia);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
@@ -130,7 +130,7 @@ namespace DAO
                     a.Id_audiencia = data.GetInt32(0);
                     a.Advogado.Nome_adv = data.GetString(1);
                     a.Cliente.Nome_cli = data.GetString(2);
-                    a.Id_processo = data.GetInt32(3);
+                    a.Processo.Id_processo = data.GetInt32(3);
                     a.Data_audiencia = data.GetDate(4);
 
                     listaAudiencia.Add(a);
