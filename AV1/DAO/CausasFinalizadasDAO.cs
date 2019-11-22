@@ -23,7 +23,7 @@ namespace DAO
                 {
                     c = new CausasFinalizadas();
 
-                    c.Id_processo = data.GetInt32(0);
+                    c.Processo.Id_processo = data.GetInt32(0);
                     c.Veredito = data.GetString(1);
                 }
 
@@ -44,7 +44,7 @@ namespace DAO
             try
             {
                 String SQL = String.Format("INSERT INTO causasfinalizadas (id_processo,veredito) VALUES ('{0}', '{1}')",
-                    _objeto.Id_processo,
+                    _objeto.Processo.Id_processo,
                     _objeto.Veredito);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
@@ -69,7 +69,7 @@ namespace DAO
             {
                 String SQL = String.Format("UPDATE causasfinalizadas SET veredito = {0} WHERE id_processo = {1};",
                     _objeto.Veredito,
-                    _objeto.Id_processo);
+                    _objeto.Processo.Id_processo);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -121,7 +121,7 @@ namespace DAO
                 {
                     CausasFinalizadas c = new CausasFinalizadas();
 
-                    c.Id_processo = data.GetInt32(0);
+                    c.Processo.Id_processo = data.GetInt32(0);
                     c.Veredito = data.GetString(1);
                     listaCausas.Add(c);
                 }
