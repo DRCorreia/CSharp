@@ -36,7 +36,7 @@ namespace View
             List<Cliente> listaClientes = c.ExecutarOpBD('t');
             foreach (Cliente o in listaClientes.Values)
             {
-                dgvCliente.Rows.Add(o.Id_cli, o.Nome_cli, o.Email_cli, o.Telefone_cli);
+                dgvCliente.Rows.Add(o.Id_cli, o.Nome_cli, o.Email_cli, o.Tel_cli);
             }
         }
     }
