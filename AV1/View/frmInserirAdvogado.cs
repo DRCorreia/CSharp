@@ -25,7 +25,7 @@ namespace View
             a.Id_adv = txbCpf;
             a.Nome_adv = txbNome;
             a.Email_adv = txbEmail;
-            a.Telefone_adv = txbTelefone;
+            a.Tel_adv = txbTelefone;
 
             AdvogadoController ctrlAdv = AdvogadoController();
 
