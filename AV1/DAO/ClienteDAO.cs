@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using DAO;
 
 namespace DAO
 {
@@ -25,7 +26,7 @@ namespace DAO
                     c.Id_cli = data.GetInt32(0);
                     c.Nome_cli = data.GetString(1);
                     c.Email_cli = data.GetString(2);
-                    c.Telefone_cli = data.GetString(3);
+                    c.Tel_cli = data.GetString(3);
                 }
 
                 data.Close();
@@ -48,7 +49,7 @@ namespace DAO
                     _objeto.Id_cli,
                     _objeto.Nome_cli,
                     _objeto.Email_cli,
-                    _objeto.Telefone_cli);
+                    _objeto.Tel_cli);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
 
@@ -72,7 +73,7 @@ namespace DAO
             {
                 String SQL = String.Format("UPDATE cliente SET email_cli = '{0}', telefone_cli = '{1}' WHERE id_cli = {2};",
                     _objeto.Email_cli,
-                    _objeto.Telefone_cli,
+                    _objeto.Tel_cli,
                     _objeto.Id_cli);
 
                 int linhaAfetadas = BD.ExecutarIDU(SQL);
@@ -128,7 +129,7 @@ namespace DAO
                     c.Id_cli = data.GetInt32(0);
                     c.Nome_cli = data.GetString(1);
                     c.Email_cli = data.GetString(2);
-                    c.Telefone_cli = data.GetString(3);
+                    c.Tel_cli = data.GetString(3);
 
                     listaCliente.Add(c);
                 }
