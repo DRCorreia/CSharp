@@ -21,8 +21,8 @@ namespace View
         {
             Audiencia a = new Audiencia();
             a.Id_audiencia = txbID;
-            a.Nome_adv = txbAdv;
-            a.Nome_cli = txbCli;
+            a.Advogado.Nome_adv = txbAdv;
+            a.Cliente.Nome_cli = txbCli;
             a.Id_processo = txbProcesso;
             a.Data_audiencia = txbData;
 
