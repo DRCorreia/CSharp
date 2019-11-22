@@ -25,7 +25,7 @@ namespace View
             c.Id_cli = txbCpf;
             c.Nome_cli = txbNome;
             c.Email_cli = txbEmail;
-            c.Telefone_cli = txbTelefone;
+            c.Tel_cli = txbTelefone;
 
             ClienteController ctrlCli = ClienteController();
 
