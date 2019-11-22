@@ -22,7 +22,7 @@ namespace View
         private void btnAlterar_Click(object sender, EventArgs e)
         {
            CausasFinalizadas c = new CausasFinalizadas();
-            c.Id_processo = txbID;
+            c.Processo.Id_processo = txbID;
             c.Veredito = txbVeredito;
             
             CausasController ctrl = new CausasController();
