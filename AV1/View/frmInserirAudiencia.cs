@@ -23,7 +23,7 @@ namespace View
             a.Id_audiencia = txbID;
             a.Advogado.Nome_adv = txbAdv;
             a.Cliente.Nome_cli = txbCli;
-            a.Id_processo = txbProcesso;
+            a.Processo.Id_processo = txbProcesso;
             a.Data_audiencia = txbData;
 
             AudienciaController ctrl = AudienciaController();
