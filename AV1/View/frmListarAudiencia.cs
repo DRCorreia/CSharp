@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controller1;
+using Model;
 
 namespace View
 {
@@ -25,10 +27,10 @@ namespace View
         private void CarregarMapaAudiencia()
         {
             AudienciaController a = new AudienciaController();
-            Dictionary<Int64, Audiencia> mapaAudiencia = a.ExecutarOpBD('t');
-            foreach (Audiencia o in mapaAudiencia.Values)
+            List<Audiencia> listaAudiencia = a.ExecutarOpBD('t');
+            foreach (Audiencia o in listaAudiencia.Values)
             {
-                dgvAudiencia.Rows.Add(o.Id_audiencia, o.Nome_adv, o.Nome_cli ,o.Id_processo,o.Data_audiencia);
+                dgvAudiencia.Rows.Add(o.Id_audiencia, o.Advogado.Nome_adv, o.Cliente.Nome_cli ,o.Id_processo,o.Data_audiencia);
             }
         }
 
