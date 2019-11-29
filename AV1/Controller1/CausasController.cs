@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAO;
+using Model;
 
 namespace Controller1
 {
@@ -19,13 +20,13 @@ namespace Controller1
                     case 'i':
                         return dao.Inserir(_o);
                     case 'd':
-                        return dao.Deletar(_o.Id_processo);
+                        return dao.Deletar(_o.Processo.Id_processo);
                     case 'a':
                         return dao.Atualizar(_o);
                     case 't':
                         return dao.ListarTodos();
                     case 'o':
-                        return dao.BuscarPorID(_o.Id_processo);
+                        return dao.BuscarPorID(_o.Processo.Id_processo);
                     default:
                         return null;
                 }
